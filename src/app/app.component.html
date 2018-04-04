@@ -1,0 +1,231 @@
+<div class="container">    
+  <div class="row">
+    <div class="col-md-4">
+      <p>POINT OF INTEREST</p>
+    </div>
+    <div class="col-md-2">
+      <p>PAY OUT PROBABILITY</p>
+    </div>
+    <div class="col-md-2">
+      <p>RADIUS</p>
+    </div>
+    <div class="col-md-2">
+      <p>WELL DEPTH</p>
+    </div>
+    <div class="col-md-2">
+      <p>WELL COUNT</p>
+    </div>
+  </div>
+
+  <div class="row">
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-md-2">API</div>
+          <div class="col-md-4"><input type="text" class="form-control"/></div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12">Or</div>
+        </div>
+        
+        <div class="row">
+              <div class="col-md-2">Lat</div>
+              <div class="col-md-4"><input type="text" class="form-control"/></div>
+              <div class="col-md-2">Long</div>
+              <div class="col-md-4"><input type="text" class="form-control"/></div>
+        </div>
+                    
+      </div>
+
+      <div class="col-md-2">
+          <!-- PAY OUT PROBABILITY -->
+      </div>
+      <div class="col-md-2">
+        <div class="row">
+          <div class="col-md-8">
+              <input type="text" value="5 Miles" disabled class="form-control" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-2">
+        <div class="row">
+          <div class="col-md-8">
+            <input type="text" value="ALL" class="form-control" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-2">
+        <!-- WELL COUNT  -->
+      </div>
+  </div>
+  
+  <div class="breaker"></div>
+
+  <div class="row" id="Main-Div">
+    <div class="col-md-5" id="Main-Div-1">
+      <div class="row">
+        <agm-map [latitude]="lat" [longitude]="long">
+            <agm-marker [latitude]="lat" [longitude]="long"></agm-marker>
+        </agm-map>
+      </div>
+
+      <div class="row" style="text-align:center">
+        <div class="col-md-6" style="background-color: Green; color: white">
+          PAY OUT
+        </div>
+        <div class="col-md-6" style="background-color: Yellow">
+            NOT PAY OUT
+          </div>
+      </div>
+
+    </div>
+
+    <div class="col-md-7" id="Main-Div-1">
+      <div class="row">
+          <div class="col-md-6">
+
+            <div class="row">
+              <div class="col-md-8">API/UWI :</div>
+              <div class="col-md-4"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8">Operator :</div>
+                <div class="col-md-4"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8">Spud Date :</div>
+                <div class="col-md-4"></div>
+            </div>
+              
+            <div class="row">
+                <div class="col-md-8">Status :</div>
+                <div class="col-md-4"></div>
+            </div>
+    
+            <div class="row">
+                <div class="col-md-8">Drill Type :</div>
+                <div class="col-md-4"></div>
+            </div>
+    
+            <div class="row">
+                <div class="col-md-8">Measured Depth(TD) :</div>
+                <div class="col-md-4"></div>
+            </div>
+    
+            <div class="row">
+                <div class="col-md-8">Well/Lease Name :</div>
+                <div class="col-md-4"></div>
+            </div>
+    
+            <div class="row">
+                <div class="col-md-8">State :</div>
+                <div class="col-md-4"></div>
+            </div>
+    
+            <div class="row">
+                <div class="col-md-8">County :</div>
+                <div class="col-md-4"></div>
+            </div>
+
+          </div>
+
+          <div class="col-md-6">
+
+              <div class="row">
+                  <div class="col-md-8">Cumulative Oil :</div>
+                  <div class="col-md-4"></div>
+                </div>
+      
+                <div class="row">
+                    <div class="col-md-8">Cumulative Gas :</div>
+                    <div class="col-md-4"></div>
+                </div>
+      
+                <div class="row">
+                    <div class="col-md-8">First Production :</div>
+                    <div class="col-md-4"></div>
+                </div>
+                  
+                <div class="row">
+                    <div class="col-md-8">Last Production :</div>
+                    <div class="col-md-4"></div>
+                </div>
+        
+                <div class="row">
+                    <div class="col-md-8">Completion Date :</div>
+                    <div class="col-md-4"></div>
+                </div>
+        
+                <div class="row">
+                    <div class="col-md-8">Reservoir :</div>
+                    <div class="col-md-4"></div>
+                </div>
+        
+                <div class="row">
+                    <div class="col-md-8">Production Type :</div>
+                    <div class="col-md-4"></div>
+                </div>
+        
+                <div class="row">
+                    <div class="col-md-8">Longitude :</div>
+                    <div class="col-md-4"></div>
+                </div>
+        
+                <div class="row">
+                    <div class="col-md-8">Latitude :</div>
+                    <div class="col-md-4"></div>
+                </div>
+      
+          </div>
+      </div>
+      
+      <br>
+
+      <div class="row">
+        <div class="col-md-9"> <!-- EIA Image --> </div>
+        <div class="col-md-3"> <!-- Amount Value --> </div>
+      </div>
+
+      <div class="row">
+          <div class="col-md-9">ESTIMATED CASH FLOW</div>
+          <div class="col-md-3"> <!-- Amount Value --> </div>
+      </div>
+
+      <br>      
+
+      <div class="row">
+          <div class="col-md-12" style="font-size: large">COMPARE WITH TERMS</div>
+      </div>
+
+      <div class="row">
+          <div class="col-md-6">Investment Amount :</div>
+          <div class="col-md-6"><input type="text" class="form-control"/></div>
+      </div>
+
+      <div class="row">
+          <div class="col-md-6">Net Revenue Interest (NRI) :</div>
+          <div class="col-md-6"><input type="text" class="form-control"/></div>
+      </div>
+
+      <div class="row">
+          <div class="col-md-6">Your Oil Price :</div>
+          <div class="col-md-6"><input type="text" class="form-control"/></div>
+      </div>
+
+      <div class="row">
+          <div class="col-md-6">Production Expenses :</div>
+          <div class="col-md-6"><input type="text" class="form-control"/></div>
+      </div>
+
+      <div class="row">
+          <div class="col-md-6">ESTIMATED CASH FLOW</div>
+          <div class="col-md-6"><!-- Amount Value --></div>
+      </div>
+    </div>
+  </div>
+
+</div>
